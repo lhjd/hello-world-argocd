@@ -27,6 +27,6 @@ spec:
       - name: hello-world
         image: hashicorp/http-echo
         args:
-          - "-text=Hello Argo CD!"
+          - "-text=Hello from HTTP Echo!"
         ports:
           - containerPort: 5678
