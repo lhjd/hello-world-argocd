@@ -7,7 +7,7 @@ spec:
     app: hello-world
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 5678
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -29,4 +29,4 @@ spec:
         args:
           - "-text=Hello Argo CD!"
         ports:
-          - containerPort: 8080
+          - containerPort: 5678
